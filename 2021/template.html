@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="{{ description }}">
+  <meta name="keywords" content="{{ keywords }}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:locale" content="en">
+  <meta property="og:image" content="{{ imageCover }}">
+  <meta property="og:updated_time" content="{{ date }}T00:00:00.000Z">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="{{ imageCover }}">
+
+  <title>{{ title }}</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/night-owl.min.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186262444-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-186262444-1');
+  </script>
+</head>
+
+<body>
+  <div class="content index width mx-auto px2 my4">
+    <div id="header-post">
+      <a id="menu-icon" href="../index.html">
+        <span class="fas fa-long-arrow-alt-left" />
+      </a>
+      <a id="menu-icon" href="../index.html">
+        <span>Anasayfa</span>
+      </a>
+    </div>
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header>
+        <h1 class="posttitle">{{ title }}</h1>
+        <div class="meta">
+          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">Gizem'in Defteri</span>
+          </span>
+
+          <div class="postdate">
+            <time datetime="{{ date }}T00:00:00.000Z" itemprop="datePublished">{{ date }}</time>
+          </div>
+
+          <div class="article-tag">
+            <span class="fa fa-tag"></span>
+            {{ tags }}
+          </div>
+        </div>
+      </header>
+
+      <div class="figure">
+        <img src="{{ imageCover }}" alt="{{ imageAlt }}">
+        <span class="figcaption">
+          Photo by <a href="{{ photographerUrl }}" target="_blank">{{ photographerName }}</a>
+        </span>
+      </div>
+
+      <hr />
+
+      {{ article }}
+
+    </article>
+
+
+    <div class="meta meta-footer">
+      <div class="article-tag">
+        Tags:
+        {{ tags }}
+      </div>
+    </div>
+
+
+
+  <footer id="footer">
+    <div class="footer-left">Copyright &copy; 2021</div>
+    <div class="footer-right">
+      <nav>
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="quotes.html">Quotes</a></li>
+          <li><a href="fotoğraflar.html">Fotoğraflar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../javascripts/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
