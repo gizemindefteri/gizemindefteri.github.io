@@ -1,2 +1,2 @@
 # gizemindefteri.github.io
-hi
+
