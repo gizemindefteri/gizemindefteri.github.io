@@ -27,7 +27,7 @@ body {
   margin: auto;
 }
 .byebye {
-  opacity: 0;
+  opacity: 100;
 }
 .byebye:hover {
   transform: scale(0.2) !important;
